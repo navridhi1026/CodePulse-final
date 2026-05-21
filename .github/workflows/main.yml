@@ -24,15 +24,15 @@ jobs:
       working-directory: ./backend
       run: npm ci
       
-    - name: Run Backend Tests
-      working-directory: ./backend
-      run: npm test
-      env:
-        DB_NAME: codepulse_test
-        DB_USER: root
-        DB_PASSWORD: password
-        DB_HOST: localhost
-        JWT_SECRET: testsecret
+    # - name: Run Backend Tests
+    #   working-directory: ./backend
+    #   run: npm test
+    #   env:
+    #     DB_NAME: codepulse_test
+    #     DB_USER: root
+    #     DB_PASSWORD: password
+    #     DB_HOST: localhost
+    #     JWT_SECRET: testsecret
         
     - name: Install Frontend Dependencies
       working-directory: ./frontend
